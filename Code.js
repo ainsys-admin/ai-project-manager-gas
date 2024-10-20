@@ -32,7 +32,7 @@ function handleEdit(e) {
 function sendToWebhook(json) {
     try {
         debugLog('Sending data to webhook');
-        const webhookUrl = getWebhookUrl('EXTRACT_TODO_SUMMARIES');
+        const webhookUrl = getWebhookUrl('GROOM_EPICS');
         if (!webhookUrl) throw new Error('Webhook URL not found');
 
         const options = {

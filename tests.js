@@ -6,7 +6,7 @@
 // Mock CONFIG and related functions
 const mockCONFIG = {
   WEBHOOKS: {
-    EXTRACT_TODO_SUMMARIES: "https://mock-webhook-url.com"
+    GROOM_EPICS: "https://mock-webhook-url.com"
   },
   DEBUG: true
 };
@@ -179,7 +179,7 @@ function assertDeepEqual(actual, expected, message) {
 
 function testConfigFunctions() {
   // Test getWebhookUrl
-  const validUrl = getWebhookUrl('EXTRACT_TODO_SUMMARIES');
+  const validUrl = getWebhookUrl('GROOM_EPICS');
   assertEqual(validUrl, "https://mock-webhook-url.com", "Valid webhook URL");
 
   const invalidUrl = getWebhookUrl('INVALID_OPERATION');
@@ -214,7 +214,7 @@ function testIsExtractTodoSummariesTrigger() {
     // Mock range object
     const mockRange = {
         getColumn: () => 10,
-        getValue: () => "Extract ToDo Summaries"
+        getValue: () => "Groom EPIC"
     };
     
     const result = isExtractTodoSummariesTrigger(mockRange);
