@@ -37,7 +37,7 @@ function handleEpicsEdit(e) {
 }
 
 /**
- * Checks if the edit should trigger ToDo Summaries extraction.
+ * Checks if the edit should trigger Epics extraction.
  * 
  * @param {Object} range - The edited range.
  * @returns {boolean} True if extraction should be triggered.

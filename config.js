@@ -13,7 +13,7 @@ var CONFIG = {
    * @const {Object}
    */
   WEBHOOKS: {
-    GROOM_EPICS: "https://hook.eu2.make.com/rl83vjk9x0iad1avisatjk9rok27wgpy",
+    GROOM_EPICS: "https://hook.eu2.make.com/mok24mkp1eu87ef5xrj6ccpbhqkc954b",
     GROOM_USER_STORIES_AND_TASKS: "",
     GROOM_SUBTASKS: "",
     ESTIMATE_SUBTASKS: "",
